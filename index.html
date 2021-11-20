@@ -18,11 +18,11 @@
            </h1>
            <nav>
                <ul>
-                   <li><a href="#home">Home</a></li>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="#cases">Cases</a></li>
-                   <li><a href="#blog">Blog</a></li>
-                   <li><a href="#contact">Contact</a></li>
+                   <li><a href="https://frankfurtfintek.netlify.app/">Home</a></li>
+                   <li><a href="https://frankfurtfintek.netlify.app#about">About</a></li>
+                   <li><a href="https://frankfurtfintek.netlify.app#cases">Cases</a></li>
+                   <li><a href="https://frankfurtfintek.netlify.app#blog">Blog</a></li>
+                   <li><a href="https://frankfurtfintek.netlify.app#contact">Contact</a></li>
                </ul>
            </nav>
         </div>
@@ -30,7 +30,7 @@
         <div class="content">
             <h1>The Sky Is The Limit</h1>
             <p>We provide world class financial assistance</p>
-            <a href="#about" class="btn"><i class="fas fa-chevron-right">
+            <a href="https://digitalexhibition.herokuapp.com/" class="btn"><i class="fas fa-chevron-right">
             </i>Read More</a>
         </div>
     </header>
@@ -72,7 +72,7 @@
                         <h2>We provide bespoke solutions</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rem provident odio esse distinctio nisi dignissimos hic, pariatur dolore aut recusandae sint laboriosam,
                              assumenda beatae quas velit culpa? Rem, ad?</p>
-                             <a href="" class="btn btn-outline">
+                             <a href="https://digitalexhibition.herokuapp.com/" class="btn btn-outline">
                                  <i class="fas fa-chevron"></i>
                                  Read More
                              </a>
@@ -189,25 +189,54 @@
                 <div class="column">
                     <div class="column-2 bg-light">
                         <h2>Request Callback</h2>
-                        <form action="http://localhost:3000/frankfurtcontact" method="post" class="callback-form">
+                        <form action="https://generalserviceserver.herokuapp.com/api/v1/frankfurtcontact" method="post" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
-                                <input type="text" name="name" 
-                                id="name" placeholder="Enter your name.." required>
+                                <input type="text" name="name" id="name" placeholder="Enter your name..">
                             </div>
                             <div class="form-control">
                                 <label for="email"></label>
-                                <input type="email" name="email"
-                                id="email" placeholder="Enter your email.." required>
+                                <input type="email" name="email" id="email" placeholder="Enter your email..">
                             </div>
                             <div class="form-control">
                                 <label for="phone"></label>
-                                <input type="text" name="phone"
-                                id="phone" placeholder="Enter phone number.." required>
+                                <input type="text" name="phone" id="phone" placeholder="Enter phone number..">
                             </div>
-                            <input type="submit" value="Send" id="submit"
-                               class="btn">
-                        </form>
+                            <input type="submit" value="Send" id="submit" class="btn">
+                            </form>
+                        <script>
+                           // document.querySelector('form').addEventListener('submit', sendWithJSONinstead);
+                            const url = "http//localhost:3000/frankfurtcontact";
+
+                            function sendWithJSONinstead() {
+
+                                var form = document.querySelector('form');
+                                var name = document.querySelector('name');
+                                var email = document.querySelector('email');
+                                var phone = document.querySelector('phone');
+                                var data = new FormData(form);
+
+
+
+                                fetch(url, {
+                                    method: 'POST',
+                                    body: JSON.stringify({
+                                        name: data.get('name'),
+                                        email: data.get('email'),
+                                        message: data.get('phone')
+                                    }),
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    }
+                                })
+                                .then(function (json) {
+                                    console.log(json)
+                                });
+                            }
+                        </script>
+
+                       
+                            
                     </div>
                  </div>
             </div>
@@ -218,7 +247,8 @@
             <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/chigozie-francis-815181110">
+                <i class="fab fa-linkedin fa-2x"></i></a>
         </div>
         <p>Copyright &copy; 2021 - FrankfurtLedger</p>
     </footer>

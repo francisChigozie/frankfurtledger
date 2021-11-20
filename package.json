@@ -1,7 +1,6 @@
 {
   "name": "frankfurtledger",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +10,14 @@
     "url": "git+https://github.com/francisChigozie/frankfurtledger.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chigozie Francis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/francisChigozie/frankfurtledger/issues"
   },
-  "homepage": "https://github.com/francisChigozie/frankfurtledger#readme"
+  "homepage": "https://github.com/francisChigozie/frankfurtledger#readme",
+  "description": "",
+  "devDependencies": {
+    "netlify-cli": "^7.0.0"
+  }
 }
