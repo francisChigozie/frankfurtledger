@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francisChigozie/frankfurtledger.git"
+    "url": "git+https://github.com/francisChigozie/veroEnterprise.git"
   },
   "keywords": [],
   "author": "Chigozie Francis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/francisChigozie/frankfurtledger/issues"
+    "url": "https://github.com/francisChigozie/veroEnterprise/issues"
   },
-  "homepage": "https://github.com/francisChigozie/frankfurtledger#readme",
+  "homepage": "https://github.com/francisChigozie/veroEnterpriser#readme",
   "description": "",
   "devDependencies": {
     "netlify-cli": "^7.0.0"
